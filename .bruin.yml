@@ -7,3 +7,7 @@ environments:
                   path: duckdb.db
                 - name: default
                   path: duckdb.db
+            google_cloud_platform:
+                - name: gcp-default
+                  project_id: bruin-playground-bahar
+                  use_application_default_credentials: true

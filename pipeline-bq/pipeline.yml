@@ -1,0 +1,3 @@
+name: claude-test-bq
+schedule: "*/15 * * * *"
+catchup: false
