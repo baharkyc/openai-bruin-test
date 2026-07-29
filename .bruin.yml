@@ -5,3 +5,5 @@ environments:
             duckdb:
                 - name: duckdb-default
                   path: duckdb.db
+                - name: default
+                  path: duckdb.db
