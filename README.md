@@ -9,6 +9,9 @@ A test [Bruin](https://github.com/bruin-data/bruin) project of `empty`-asset pip
 | `claude-test-10min` | `*/10 * * * *` | 3 | `tick → transform → report` |
 | `claude-test-15min` | `*/15 * * * *` | 4 | `extract → clean → enrich → publish` |
 | `claude-test-hourly` | `0 * * * *` | 5 | diamond: `seed → {branch_a, branch_b} → merged → summary` |
+| `claude-test-python` | `*/10 * * * *` | 2 | `extract_data`, `transform_data` — Python assets that log output then **fail** (for exercising logs + failed statuses) |
+
+> All assets are `type: empty` except the `claude-test-python` pipeline, whose two Python assets deliberately raise exceptions so runs produce real logs and failed statuses.
 
 ## DAG
 
