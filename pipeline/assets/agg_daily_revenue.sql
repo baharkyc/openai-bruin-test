@@ -1,15 +1,10 @@
 /* @bruin
 
 name: agg_daily_revenue
-type: duckdb.sql
-connection: duckdb-default
+type: empty
 
 depends:
   - fct_orders
-
-materialization:
-  type: table
-  strategy: create+replace
 
 @bruin */
 

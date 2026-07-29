@@ -1,12 +1,7 @@
 /* @bruin
 
 name: raw_orders
-type: duckdb.sql
-connection: duckdb-default
-
-materialization:
-  type: table
-  strategy: create+replace
+type: empty
 
 @bruin */
 

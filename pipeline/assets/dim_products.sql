@@ -1,22 +1,10 @@
 /* @bruin
 
 name: dim_products
-type: duckdb.sql
-connection: duckdb-default
+type: empty
 
 depends:
   - stg_products
-
-materialization:
-  type: table
-  strategy: create+replace
-
-columns:
-  - name: product_id
-    type: integer
-    checks:
-      - name: not_null
-      - name: unique
 
 @bruin */
 

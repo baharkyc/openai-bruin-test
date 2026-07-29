@@ -1,17 +1,12 @@
 /* @bruin
 
 name: fct_orders
-type: duckdb.sql
-connection: duckdb-default
+type: empty
 
 depends:
   - stg_orders
   - dim_customers
   - dim_products
-
-materialization:
-  type: table
-  strategy: create+replace
 
 @bruin */
 

@@ -1,2 +1,4 @@
 duckdb.db
 *.db
+
+.bruin.yml

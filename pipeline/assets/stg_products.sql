@@ -1,15 +1,10 @@
 /* @bruin
 
 name: stg_products
-type: duckdb.sql
-connection: duckdb-default
+type: empty
 
 depends:
   - raw_products
-
-materialization:
-  type: table
-  strategy: create+replace
 
 @bruin */
 
