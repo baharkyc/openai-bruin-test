@@ -1,6 +1,9 @@
 # claude-test
 
-A test [Bruin](https://github.com/bruin-data/bruin) project with a single DuckDB pipeline (`claude-test`) of 10 assets forming a sources → staging → marts DAG.
+A test [Bruin](https://github.com/bruin-data/bruin) project with two pipelines of `empty` assets (no connections required):
+
+- **`claude-test`** — 10 assets forming a sources → staging → marts DAG, scheduled `@daily`.
+- **`claude-test-10min`** — 3-asset chain (`tick → transform → report`), scheduled every 10 minutes (`*/10 * * * *`) so run history and asset-health slots accumulate quickly.
 
 ## DAG
 
