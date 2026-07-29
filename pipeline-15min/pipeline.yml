@@ -1,0 +1,3 @@
+name: claude-test-15min
+schedule: "*/15 * * * *"
+catchup: false

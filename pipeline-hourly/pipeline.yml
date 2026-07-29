@@ -1,0 +1,3 @@
+name: claude-test-hourly
+schedule: "0 * * * *"
+catchup: false

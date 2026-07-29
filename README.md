@@ -1,9 +1,14 @@
 # claude-test
 
-A test [Bruin](https://github.com/bruin-data/bruin) project with two pipelines of `empty` assets (no connections required):
+A test [Bruin](https://github.com/bruin-data/bruin) project of `empty`-asset pipelines (no connections required), on varied schedules so run history and asset-health slots accumulate quickly:
 
-- **`claude-test`** — 10 assets forming a sources → staging → marts DAG, scheduled `@daily`.
-- **`claude-test-10min`** — 3-asset chain (`tick → transform → report`), scheduled every 10 minutes (`*/10 * * * *`) so run history and asset-health slots accumulate quickly.
+| Pipeline | Schedule | Assets | Shape |
+|----------|----------|--------|-------|
+| `claude-test` | `* * * * *` (every minute) | 10 | sources → staging → marts DAG |
+| `claude-test-5min` | `*/5 * * * *` | 2 | `ingest → aggregate` |
+| `claude-test-10min` | `*/10 * * * *` | 3 | `tick → transform → report` |
+| `claude-test-15min` | `*/15 * * * *` | 4 | `extract → clean → enrich → publish` |
+| `claude-test-hourly` | `0 * * * *` | 5 | diamond: `seed → {branch_a, branch_b} → merged → summary` |
 
 ## DAG
 

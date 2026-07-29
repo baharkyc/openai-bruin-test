@@ -1,3 +1,3 @@
 name: claude-test
-schedule: "@daily"
+schedule: "* * * * *"
 catchup: false
