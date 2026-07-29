@@ -2,7 +2,7 @@
 
 name: bruin_test_data.check_duplicate_orders
 type: bq.sql
-connection: gcp-default
+connection: bigquery
 
 description: Ensures there are no duplicate Order IDs in the raw data.
 

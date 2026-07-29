@@ -11,7 +11,7 @@ A test [Bruin](https://github.com/bruin-data/bruin) project of `empty`-asset pip
 | `claude-test-hourly` | `0 * * * *` | 5 | diamond: `seed → {branch_a, branch_b} → merged → summary`; `seed` has a **cross-pipeline dependency** on `claude-test.agg_daily_revenue` |
 | `claude-test-python` | `*/10 * * * *` | 2 | `extract_data`, `transform_data` — Python assets that log output then **fail** (for exercising logs + failed statuses) |
 | `claude-test-duckdb` | `*/10 * * * *` | 3 | `dk_numbers → dk_squared → dk_summary` — real `duckdb.sql` assets that materialize tables (connection `default`) |
-| `claude-test-bq` | `*/15 * * * *` | 2 | `check_duplicate_orders`, `vip_customers` — real `bq.sql` assets over `bruin-playground-bahar.bruin_test_data.random_sales` (connection `gcp-default`) |
+| `claude-test-bq` | `*/15 * * * *` | 2 | `check_duplicate_orders`, `vip_customers` — real `bq.sql` assets over `bruin-playground-bahar.bruin_test_data.random_sales` (connection `bigquery`) |
 
 > The `claude-test-python` pipeline's assets deliberately raise exceptions so runs produce real logs and failed statuses. The `claude-test-duckdb` pipeline runs real DuckDB/MotherDuck SQL against the `default` connection; all other assets are `type: empty` (no connection required).
 

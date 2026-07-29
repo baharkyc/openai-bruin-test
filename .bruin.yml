@@ -8,6 +8,6 @@ environments:
                 - name: default
                   path: duckdb.db
             google_cloud_platform:
-                - name: gcp-default
+                - name: bigquery
                   project_id: bruin-playground-bahar
                   use_application_default_credentials: true

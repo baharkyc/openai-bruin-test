@@ -2,7 +2,7 @@
 
 name: bruin_test_data.vip_customers
 type: bq.sql
-connection: gcp-default
+connection: bigquery
 
 description: Identifies customers who have spent more than $500.
 
