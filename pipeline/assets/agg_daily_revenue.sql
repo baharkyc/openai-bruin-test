@@ -1,6 +1,7 @@
 /* @bruin
 
 name: agg_daily_revenue
+uri: claude-test.agg_daily_revenue
 type: empty
 
 depends:
