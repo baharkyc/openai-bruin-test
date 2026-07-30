@@ -2,7 +2,7 @@
 
 name: dk_summary
 type: duckdb.sql
-connection: default
+connection: duckdb
 
 depends:
   - dk_squared

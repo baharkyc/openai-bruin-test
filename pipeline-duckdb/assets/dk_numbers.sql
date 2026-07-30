@@ -2,7 +2,7 @@
 
 name: dk_numbers
 type: duckdb.sql
-connection: default
+connection: duckdb
 
 materialization:
   type: table

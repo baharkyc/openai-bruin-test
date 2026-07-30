@@ -5,7 +5,7 @@ environments:
             duckdb:
                 - name: duckdb-default
                   path: duckdb.db
-                - name: default
+                - name: duckdb
                   path: duckdb.db
             google_cloud_platform:
                 - name: bigquery
