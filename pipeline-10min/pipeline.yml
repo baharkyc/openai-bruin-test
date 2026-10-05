@@ -1,3 +1,3 @@
-name: claude-test-10min
+name: openai-test-10min
 schedule: "*/10 * * * *"
 catchup: false

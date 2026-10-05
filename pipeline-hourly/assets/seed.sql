@@ -4,7 +4,7 @@ name: seed
 type: empty
 
 depends:
-  - uri: claude-test.agg_daily_revenue
+  - uri: openai-test.agg_daily_revenue
 
 @bruin */
 
